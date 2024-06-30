@@ -16,27 +16,27 @@ public class CalculatorController {
     }
 
     @GetMapping()
-    public String CalculatorWelcome() {
+    public String сalculatorWelcome() {
         return calculatorImpl.welcome();
     }
 
     @GetMapping("/plus")
-    public String CalculatorPlus(@RequestParam("num1") int num1, @RequestParam("num2") int num2) {
+    public String сalculatorPlus(@RequestParam("num1") int num1, @RequestParam("num2") int num2) {
         return calculatorImpl.plus(num1, num2);
     }
 
     @GetMapping("/minus")
-    public String CalculatorMinus(@RequestParam("num1") int num1, @RequestParam("num2") int num2) {
+    public String сalculatorMinus(@RequestParam("num1") int num1, @RequestParam("num2") int num2) {
         return calculatorImpl.minus(num1, num2);
     }
 
     @GetMapping("/multiply")
-    public String CalculatrorMultiply(@RequestParam("num1") int num1, @RequestParam("num2") int num2) {
+    public String сalculatrorMultiply(@RequestParam("num1") int num1, @RequestParam("num2") int num2) {
         return calculatorImpl.multiply(num1, num2);
     }
 
     @GetMapping("/divide")
-    public String CalculatorDivide(@RequestParam("num1") int num1, @RequestParam("num2") int num2) {
+    public String сalculatorDivide(@RequestParam("num1") int num1, @RequestParam("num2") int num2) {
         return calculatorImpl.divide(num1, num2);
     }
 
